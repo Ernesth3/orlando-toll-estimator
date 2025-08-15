@@ -1,5 +1,8 @@
 {
   "framework": "vite",
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/api/(.*)",
