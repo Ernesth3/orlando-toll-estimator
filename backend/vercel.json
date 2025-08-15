@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "outputDirectory": ".",
+  "functions": {
+    "api/estimate.ts": {
+      "maxDuration": 10
+    }
+  }
+} 

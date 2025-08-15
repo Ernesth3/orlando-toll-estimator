@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://backend-23aifntg5-ernests-projects-4cb81ca9.vercel.app/api/$1"
+    }
+  ]
+} 
