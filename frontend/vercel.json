@@ -7,7 +7,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://your-backend-url.com/api/$1"
+      "destination": "https://orlando-toll-estimator-2.vercel.app/api/$1"
     }
   ],
   "headers": [
