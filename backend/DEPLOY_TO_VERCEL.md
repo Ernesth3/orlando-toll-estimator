@@ -19,7 +19,7 @@ git push origin main
 4. **配置项目：**
    - **Framework Preset**: Node.js
    - **Root Directory**: `backend`
-   - **Build Command**: `npm install` (留空，Vercel会自动处理)
+   - **Build Command**: 留空（Vercel会自动处理）
    - **Output Directory**: 留空
    - **Install Command**: 留空
 
@@ -28,10 +28,11 @@ git push origin main
 在Vercel项目设置中添加以下环境变量：
 
 ```
-OPENAI_API_KEY=your_openai_api_key_here
 TOLLGURU_API_KEY=your_tollguru_api_key_here
 NODE_ENV=production
 ```
+
+**注意：** 如果您暂时没有TollGuru API密钥，系统会使用模拟数据进行测试。
 
 ### 步骤4：部署
 
@@ -81,6 +82,7 @@ NODE_ENV=production
 2. **API调用失败**
    - 验证环境变量是否正确设置
    - 检查CORS设置
+   - 如果没有TollGuru API密钥，系统会使用模拟数据
 
 3. **路由问题**
    - 确保Vercel配置中的路由规则正确
@@ -91,3 +93,9 @@ NODE_ENV=production
 - Vercel部署日志
 - 环境变量设置
 - API端点响应
+
+## 💡 关于API密钥
+
+- **TollGuru API密钥**: 用于获取真实的收费公路费用数据
+- **模拟数据**: 如果没有API密钥，系统会使用预设的模拟数据进行测试
+- **生产环境**: 建议获取真实的TollGuru API密钥以获得准确数据
